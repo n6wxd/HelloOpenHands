@@ -51,7 +51,7 @@ The project currently supports:
 
 - **WebAssembly** - Compile C/Rust to WASM for browser execution
 - **Mobile Platforms** - Swift (iOS) and Kotlin (Android) implementations
-- **Functional Languages** - Haskell, Clojure, or F# implementations
+- **Functional Languages** - Haskell, Clojure implementations
 - **Assembly Language** - Low-level implementation for educational purposes
 
 ## Contributing
@@ -76,4 +76,4 @@ Each new language implementation should follow the established patterns:
 - **v1.7** - Added Java support with javac/java compilation
 - **v1.8** - Added JavaScript (Node.js) support
 - **v1.9** - Added F# support with .NET F# Interactive
-- **v2.0** - (Planned) CI/CD pipeline and additional language support
+- **v2.0** - Added VB.NET support with .NET project system

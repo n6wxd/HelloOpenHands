@@ -99,6 +99,15 @@ else
     ((TESTS_FAILED++))
 fi
 
+# Test VB.NET program
+echo
+bash test_hello_vbnet.sh
+if [ $? -eq 0 ]; then
+    ((TESTS_PASSED++))
+else
+    ((TESTS_FAILED++))
+fi
+
 # Summary
 echo
 echo "======================================"

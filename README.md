@@ -8,7 +8,7 @@ A comprehensive "Hello World" project demonstrating basic programming across 10 
 
 ## Description
 
-This project contains simple "Hello World" scripts in bash, Python, TypeScript, JavaScript (Node.js), C, C#, Rust, Go, Java, and F# that print "hello world!" to the console. It serves as a basic example of programming in different languages and can be used as a starting point for learning programming.
+This project contains simple "Hello World" scripts in bash, Python, TypeScript, JavaScript (Node.js), C, C#, Rust, Go, Java, F#, and VB.NET that print "hello world!" to the console. It serves as a basic example of programming in different languages and can be used as a starting point for learning programming.
 
 ## Supported Languages
 
@@ -24,6 +24,7 @@ This project contains simple "Hello World" scripts in bash, Python, TypeScript, 
 | Go | `hello.go` | Go compiler | `go run hello.go` |
 | Java | `Hello.java` | JDK | `javac Hello.java && java Hello` |
 | F# | `hello.fsx` | .NET SDK | `dotnet fsi hello.fsx` |
+| VB.NET | `hello.vb` | .NET SDK | `dotnet run --project hello_vb.vbproj` |
 
 ## Quick Start
 
@@ -56,7 +57,9 @@ This project contains simple "Hello World" scripts in bash, Python, TypeScript, 
 - `hello.go` - Go program that outputs "hello world!"
 - `Hello.java` - Java program that outputs "hello world!"
 - `hello.fsx` - F# script that outputs "hello world!"
+- `hello.vb` - VB.NET program that outputs "hello world!"
 - `hello.csproj` - .NET project file for the C# program
+- `hello_vb.vbproj` - .NET project file for the VB.NET program
 - `Cargo.toml` - Rust project configuration file
 - `Makefile` - Build configuration for the C program
 - `Tests/` - Directory containing test files
@@ -70,6 +73,7 @@ This project contains simple "Hello World" scripts in bash, Python, TypeScript, 
   - `test_hello_java.sh` - Test for the Java program
   - `test_hello_javascript.sh` - Test for the JavaScript program
   - `test_hello_fsharp.sh` - Test for the F# script
+  - `test_hello_vbnet.sh` - Test for the VB.NET program
   - `run_all_tests.sh` - Master test runner
 
 ## Usage
@@ -268,6 +272,14 @@ To run the F# script using the .NET F# Interactive:
 dotnet fsi hello.fsx
 ```
 
+### VB.NET Program
+
+To run the VB.NET program using the .NET runtime:
+
+```bash
+dotnet run --project hello_vb.vbproj
+```
+
 ## Requirements
 
 - **For bash script**: Bash shell (available on most Unix-like systems including Linux and macOS)
@@ -280,6 +292,7 @@ dotnet fsi hello.fsx
 - **For Go program**: Go compiler and runtime
 - **For Java program**: Java Development Kit (JDK) with javac compiler and java runtime
 - **For F# script**: .NET SDK 9.0 or later (includes F# Interactive)
+- **For VB.NET program**: .NET SDK 9.0 or later
 
 ## Output
 
@@ -343,14 +356,18 @@ cd Tests
 # Test F# script
 cd Tests
 ./test_hello_fsharp.sh
+
+# Test VB.NET program
+cd Tests
+./test_hello_vbnet.sh
 ```
 
 The tests verify that each script/program produces the expected "hello world!" output.
 
 ## Project Statistics
 
-- **Languages Supported:** 10
-- **Test Coverage:** 100% (10/10 languages tested)
+- **Languages Supported:** 11
+- **Test Coverage:** 100% (11/11 languages tested)
 - **Total Files:** 25+ (source files, tests, documentation, build configs)
 - **Build Systems:** 4 (Make, .NET, Cargo, Go modules)
 - **Platforms Tested:** macOS (with cross-platform compatibility)
@@ -369,6 +386,7 @@ This project follows semantic versioning with each major language addition:
 - **v1.7** - Added Java support with javac/java compilation
 - **v1.8** - Added JavaScript (Node.js) support
 - **v1.9** - Added F# support with .NET F# Interactive
+- **v2.0** - Added VB.NET support with .NET project system
 
 Each version is tagged in Git for easy checkout and reference.
 
