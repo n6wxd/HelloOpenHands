@@ -8,6 +8,7 @@ The project currently supports:
 - ✅ TypeScript script (`hello.ts`)
 - ✅ C program (`hello.c`) with Makefile build system
 - ✅ C# program (`hello.cs`) with .NET project system (tested on macOS)
+- ✅ Rust program (`hello.rs`) with Cargo build system (tested on macOS)
 - ✅ Comprehensive test suite for all implementations
 - ✅ Documentation and usage instructions
 
@@ -15,7 +16,7 @@ The project currently supports:
 
 ### Language Implementations
 
-- [ ] **Rust** - Add `hello.rs` with Cargo build system
+- ✅ **Rust** - Add `hello.rs` with Cargo build system
 - [ ] **Go** - Add `hello.go` with go build/run support
 - [ ] **Java** - Add `Hello.java` with compilation instructions
 - [ ] **JavaScript (Node.js)** - Add pure Node.js version (separate from TypeScript)
@@ -66,4 +67,5 @@ See `ISSUE_TEMPLATE_RUST.md` for an example of how to contribute a new language 
 - **v1.2** - Added TypeScript support  
 - **v1.3** - Added C support with Makefile build system
 - **v1.4** - Added C# support with .NET project system
-- **v2.0** - (Planned) Rust support and CI/CD pipeline
+- **v1.5** - Added Rust support with Cargo build system
+- **v2.0** - (Planned) Go support and CI/CD pipeline

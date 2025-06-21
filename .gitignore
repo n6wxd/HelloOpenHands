@@ -14,3 +14,7 @@ npm-debug.log
 # .NET build artifacts
 bin/
 obj/
+
+# Rust build artifacts
+target/
+Cargo.lock

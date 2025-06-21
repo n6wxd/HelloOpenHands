@@ -4,7 +4,7 @@ A simple "Hello World" project demonstrating basic scripting in multiple languag
 
 ## Description
 
-This project contains simple "Hello World" scripts in bash, Python, TypeScript, C, and C# that print "hello world!" to the console. It serves as a basic example of programming in different languages and can be used as a starting point for learning programming.
+This project contains simple "Hello World" scripts in bash, Python, TypeScript, C, C#, and Rust that print "hello world!" to the console. It serves as a basic example of programming in different languages and can be used as a starting point for learning programming.
 
 ## Files
 
@@ -13,7 +13,9 @@ This project contains simple "Hello World" scripts in bash, Python, TypeScript, 
 - `hello.ts` - TypeScript script that outputs "hello world!"
 - `hello.c` - C program that outputs "hello world!"
 - `hello.cs` - C# program that outputs "hello world!"
+- `hello.rs` - Rust program that outputs "hello world!"
 - `hello.csproj` - .NET project file for the C# program
+- `Cargo.toml` - Rust project configuration file
 - `Makefile` - Build configuration for the C program
 - `Tests/` - Directory containing test files
   - `test_hello_bash.sh` - Test for the bash script
@@ -21,6 +23,7 @@ This project contains simple "Hello World" scripts in bash, Python, TypeScript, 
   - `test_hello_typescript.js` - Test for the TypeScript script
   - `test_hello_c.sh` - Test for the C program
   - `test_hello_csharp.sh` - Test for the C# program
+  - `test_hello_rust.sh` - Test for the Rust program
   - `run_all_tests.sh` - Master test runner
 
 ## Usage
@@ -120,6 +123,40 @@ To clean build artifacts:
 dotnet clean
 ```
 
+### Rust Program
+
+To run the Rust program using Cargo:
+
+```bash
+cargo run
+```
+
+To build the Rust program without running:
+
+```bash
+cargo build
+```
+
+To run the compiled binary directly:
+
+```bash
+cargo build
+./target/debug/hello
+```
+
+To build an optimized release version:
+
+```bash
+cargo build --release
+./target/release/hello
+```
+
+To clean build artifacts:
+
+```bash
+cargo clean
+```
+
 ## Requirements
 
 - **For bash script**: Bash shell (available on most Unix-like systems including Linux and macOS)
@@ -127,6 +164,7 @@ dotnet clean
 - **For TypeScript script**: Node.js (to run as JavaScript) or TypeScript compiler (optional)
 - **For C program**: GCC compiler and make utility
 - **For C# program**: .NET SDK 9.0 or later
+- **For Rust program**: Rust toolchain (rustc and cargo)
 
 ## Output
 
@@ -170,6 +208,10 @@ cd Tests
 # Test C# program
 cd Tests
 ./test_hello_csharp.sh
+
+# Test Rust program
+cd Tests
+./test_hello_rust.sh
 ```
 
 The tests verify that each script/program produces the expected "hello world!" output.
