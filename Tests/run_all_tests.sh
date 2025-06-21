@@ -36,6 +36,15 @@ else
     ((TESTS_FAILED++))
 fi
 
+# Test C program
+echo
+bash test_hello_c.sh
+if [ $? -eq 0 ]; then
+    ((TESTS_PASSED++))
+else
+    ((TESTS_FAILED++))
+fi
+
 # Summary
 echo
 echo "======================================"

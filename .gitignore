@@ -1,0 +1,12 @@
+# Compiled C program
+hello
+
+# macOS system files
+.DS_Store
+
+# Node.js debug logs
+npm-debug.log
+
+# TypeScript compiled output (if using tsc)
+*.js
+!Tests/*.js

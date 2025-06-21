@@ -4,17 +4,20 @@ A simple "Hello World" project demonstrating basic scripting in multiple languag
 
 ## Description
 
-This project contains simple "Hello World" scripts in bash, Python, and TypeScript that print "hello world!" to the console. It serves as a basic example of scripting in different languages and can be used as a starting point for learning programming.
+This project contains simple "Hello World" scripts in bash, Python, TypeScript, and C that print "hello world!" to the console. It serves as a basic example of programming in different languages and can be used as a starting point for learning programming.
 
 ## Files
 
 - `hello.sh` - Bash script that outputs "hello world!"
 - `hello.py` - Python script that outputs "hello world!"
 - `hello.ts` - TypeScript script that outputs "hello world!"
+- `hello.c` - C program that outputs "hello world!"
+- `Makefile` - Build configuration for the C program
 - `Tests/` - Directory containing test files
   - `test_hello_bash.sh` - Test for the bash script
   - `test_hello_python.py` - Test for the Python script
   - `test_hello_typescript.js` - Test for the TypeScript script
+  - `test_hello_c.sh` - Test for the C program
   - `run_all_tests.sh` - Master test runner
 
 ## Usage
@@ -61,11 +64,39 @@ Or if you have TypeScript compiler installed, you can compile and run:
 tsc hello.ts && node hello.js
 ```
 
+### C Program
+
+To compile and run the C program using make:
+
+```bash
+make
+./hello
+```
+
+Or compile and run in one step:
+
+```bash
+make run
+```
+
+To clean up compiled files:
+
+```bash
+make clean
+```
+
+Available make targets:
+- `make` or `make all` - Compile the C program
+- `make run` - Compile and run the program
+- `make test` - Compile and test the program
+- `make clean` - Remove compiled files
+
 ## Requirements
 
 - **For bash script**: Bash shell (available on most Unix-like systems including Linux and macOS)
 - **For Python script**: Python 3.x
 - **For TypeScript script**: Node.js (to run as JavaScript) or TypeScript compiler (optional)
+- **For C program**: GCC compiler and make utility
 
 ## Output
 
@@ -101,9 +132,13 @@ python3 test_hello_python.py
 # Test TypeScript script
 cd Tests
 node test_hello_typescript.js
+
+# Test C program
+cd Tests
+./test_hello_c.sh
 ```
 
-The tests verify that each script produces the expected "hello world!" output.
+The tests verify that each script/program produces the expected "hello world!" output.
 
 ## Getting Started
 
