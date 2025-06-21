@@ -12,6 +12,7 @@ The project currently supports:
 - ✅ Go program (`hello.go`) with go build/run support (tested on macOS)
 - ✅ Java program (`Hello.java`) with javac/java compilation (tested on macOS)
 - ✅ JavaScript program (`hello.js`) with Node.js runtime (tested on macOS)
+- ✅ F# script (`hello.fsx`) with .NET F# Interactive support (tested on macOS)
 - ✅ Comprehensive test suite for all implementations
 - ✅ Documentation and usage instructions
 
@@ -23,7 +24,7 @@ The project currently supports:
 - ✅ **Go** - Add `hello.go` with go build/run support
 - ✅ **Java** - Add `Hello.java` with compilation instructions
 - ✅ **JavaScript (Node.js)** - Add pure Node.js version (separate from TypeScript)
-- [ ] **F#** - Add `hello.fs` with .NET F# support
+- ✅ **F#** - Add `hello.fsx` with .NET F# Interactive support
 - [ ] **VB.NET** - Add `hello.vb` with .NET VB.NET support
 
 ### Build & Testing Improvements
@@ -74,4 +75,5 @@ Each new language implementation should follow the established patterns:
 - **v1.6** - Added Go support with go build/run
 - **v1.7** - Added Java support with javac/java compilation
 - **v1.8** - Added JavaScript (Node.js) support
+- **v1.9** - Added F# support with .NET F# Interactive
 - **v2.0** - (Planned) CI/CD pipeline and additional language support

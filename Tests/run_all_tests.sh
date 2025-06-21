@@ -90,6 +90,15 @@ else
     ((TESTS_FAILED++))
 fi
 
+# Test F# program
+echo
+bash test_hello_fsharp.sh
+if [ $? -eq 0 ]; then
+    ((TESTS_PASSED++))
+else
+    ((TESTS_FAILED++))
+fi
+
 # Summary
 echo
 echo "======================================"

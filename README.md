@@ -4,7 +4,7 @@ A simple "Hello World" project demonstrating basic scripting in multiple languag
 
 ## Description
 
-This project contains simple "Hello World" scripts in bash, Python, TypeScript, JavaScript (Node.js), C, C#, Rust, Go, and Java that print "hello world!" to the console. It serves as a basic example of programming in different languages and can be used as a starting point for learning programming.
+This project contains simple "Hello World" scripts in bash, Python, TypeScript, JavaScript (Node.js), C, C#, Rust, Go, Java, and F# that print "hello world!" to the console. It serves as a basic example of programming in different languages and can be used as a starting point for learning programming.
 
 ## Files
 
@@ -17,6 +17,7 @@ This project contains simple "Hello World" scripts in bash, Python, TypeScript, 
 - `hello.rs` - Rust program that outputs "hello world!"
 - `hello.go` - Go program that outputs "hello world!"
 - `Hello.java` - Java program that outputs "hello world!"
+- `hello.fsx` - F# script that outputs "hello world!"
 - `hello.csproj` - .NET project file for the C# program
 - `Cargo.toml` - Rust project configuration file
 - `Makefile` - Build configuration for the C program
@@ -29,6 +30,8 @@ This project contains simple "Hello World" scripts in bash, Python, TypeScript, 
   - `test_hello_rust.sh` - Test for the Rust program
   - `test_hello_go.sh` - Test for the Go program
   - `test_hello_java.sh` - Test for the Java program
+  - `test_hello_javascript.sh` - Test for the JavaScript program
+  - `test_hello_fsharp.sh` - Test for the F# script
   - `run_all_tests.sh` - Master test runner
 
 ## Usage
@@ -219,6 +222,14 @@ To clean build artifacts (remove compiled class file):
 rm -f Hello.class
 ```
 
+### F# Script
+
+To run the F# script using the .NET F# Interactive:
+
+```bash
+dotnet fsi hello.fsx
+```
+
 ## Requirements
 
 - **For bash script**: Bash shell (available on most Unix-like systems including Linux and macOS)
@@ -230,6 +241,7 @@ rm -f Hello.class
 - **For Rust program**: Rust toolchain (rustc and cargo)
 - **For Go program**: Go compiler and runtime
 - **For Java program**: Java Development Kit (JDK) with javac compiler and java runtime
+- **For F# script**: .NET SDK 9.0 or later (includes F# Interactive)
 
 ## Output
 
@@ -289,6 +301,10 @@ cd Tests
 # Test JavaScript program
 cd Tests
 ./test_hello_javascript.sh
+
+# Test F# script
+cd Tests
+./test_hello_fsharp.sh
 ```
 
 The tests verify that each script/program produces the expected "hello world!" output.
