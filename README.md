@@ -1,10 +1,48 @@
 # HelloOpenHands
 
-A simple "Hello World" project demonstrating basic scripting in multiple languages.
+A comprehensive "Hello World" project demonstrating basic programming across 10 different languages.
+
+[![Languages](https://img.shields.io/badge/languages-10-blue.svg)](#supported-languages)
+[![Tests](https://img.shields.io/badge/tests-passing-green.svg)](#testing)
+[![Version](https://img.shields.io/badge/version-v1.9-orange.svg)](#version-history)
 
 ## Description
 
 This project contains simple "Hello World" scripts in bash, Python, TypeScript, JavaScript (Node.js), C, C#, Rust, Go, Java, and F# that print "hello world!" to the console. It serves as a basic example of programming in different languages and can be used as a starting point for learning programming.
+
+## Supported Languages
+
+| Language | File | Runtime/Compiler | Command |
+|----------|------|------------------|---------|
+| Bash | `hello.sh` | Bash shell | `./hello.sh` |
+| Python | `hello.py` | Python 3.x | `python3 hello.py` |
+| TypeScript | `hello.ts` | Node.js | `node hello.ts` |
+| JavaScript | `hello.js` | Node.js | `node hello.js` |
+| C | `hello.c` | GCC + Make | `make run` |
+| C# | `hello.cs` | .NET SDK | `dotnet run` |
+| Rust | `hello.rs` | Rust + Cargo | `cargo run` |
+| Go | `hello.go` | Go compiler | `go run hello.go` |
+| Java | `Hello.java` | JDK | `javac Hello.java && java Hello` |
+| F# | `hello.fsx` | .NET SDK | `dotnet fsi hello.fsx` |
+
+## Quick Start
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/n6wxd/HelloOpenHands.git
+   cd HelloOpenHands
+   ```
+
+2. **Run any language (example with Python):**
+   ```bash
+   python3 hello.py
+   ```
+
+3. **Run all tests:**
+   ```bash
+   cd Tests
+   ./run_all_tests.sh
+   ```
 
 ## Files
 
@@ -309,11 +347,59 @@ cd Tests
 
 The tests verify that each script/program produces the expected "hello world!" output.
 
+## Project Statistics
+
+- **Languages Supported:** 10
+- **Test Coverage:** 100% (10/10 languages tested)
+- **Total Files:** 25+ (source files, tests, documentation, build configs)
+- **Build Systems:** 4 (Make, .NET, Cargo, Go modules)
+- **Platforms Tested:** macOS (with cross-platform compatibility)
+
+## Version History
+
+This project follows semantic versioning with each major language addition:
+
+- **v1.0** - Initial bash script implementation
+- **v1.1** - Added Python support
+- **v1.2** - Added TypeScript support  
+- **v1.3** - Added C support with Makefile build system
+- **v1.4** - Added C# support with .NET project system
+- **v1.5** - Added Rust support with Cargo build system
+- **v1.6** - Added Go support with go build/run
+- **v1.7** - Added Java support with javac/java compilation
+- **v1.8** - Added JavaScript (Node.js) support
+- **v1.9** - Added F# support with .NET F# Interactive
+
+Each version is tagged in Git for easy checkout and reference.
+
+## Contributing
+
+Contributions are welcome! When adding a new language implementation:
+
+1. **Follow the established patterns:**
+   - Create source file with consistent output format ("hello world!")
+   - Add build/execution instructions to README
+   - Create test script following naming convention (`test_hello_<language>.sh`)
+   - Update documentation and roadmap
+   - Integrate with master test runner
+
+2. **Testing requirements:**
+   - All implementations must pass automated tests
+   - Test scripts should verify exact output match
+   - Include both compilation (if needed) and execution testing
+
+3. **Documentation:**
+   - Update README.md with usage instructions
+   - Update ROADMAP.md to mark language as completed
+   - Include requirements and dependencies
+
 ## Getting Started
 
 1. Clone this repository
 2. Navigate to the project directory
 3. Run the script using one of the methods described in the Usage section
+
+For detailed roadmap and planned features, see [ROADMAP.md](ROADMAP.md).
 
 ## License
 
