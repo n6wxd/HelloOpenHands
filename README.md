@@ -8,7 +8,7 @@ A comprehensive "Hello World" project demonstrating basic programming across 10 
 
 ## Description
 
-This project contains simple "Hello World" scripts in bash, Python, TypeScript, JavaScript (Node.js), C, C#, Rust, Go, Java, F#, and VB.NET that print "hello world!" to the console. It serves as a basic example of programming in different languages and can be used as a starting point for learning programming.
+This project contains simple "Hello World" scripts in bash, Python, TypeScript, JavaScript (Node.js), C, C#, Rust, Go, Java, F#, VB.NET, and ARM64 Assembly that print "hello world!" to the console. It serves as a basic example of programming in different languages and can be used as a starting point for learning programming.
 
 ## Supported Languages
 
@@ -25,6 +25,7 @@ This project contains simple "Hello World" scripts in bash, Python, TypeScript, 
 | Java | `Hello.java` | JDK | `javac Hello.java && java Hello` |
 | F# | `hello.fsx` | .NET SDK | `dotnet fsi hello.fsx` |
 | VB.NET | `hello.vb` | .NET SDK | `dotnet run --project hello_vb.vbproj` |
+| ARM64 Assembly | `hello.s` | Xcode CLI Tools | `as hello.s -o hello.o && clang hello.o -o hello_asm && ./hello_asm` |
 
 ## Quick Start
 
@@ -58,6 +59,7 @@ This project contains simple "Hello World" scripts in bash, Python, TypeScript, 
 - `Hello.java` - Java program that outputs "hello world!"
 - `hello.fsx` - F# script that outputs "hello world!"
 - `hello.vb` - VB.NET program that outputs "hello world!"
+- `hello.s` - ARM64 Assembly program that outputs "hello world!"
 - `hello.csproj` - .NET project file for the C# program
 - `hello_vb.vbproj` - .NET project file for the VB.NET program
 - `Cargo.toml` - Rust project configuration file
@@ -74,6 +76,7 @@ This project contains simple "Hello World" scripts in bash, Python, TypeScript, 
   - `test_hello_javascript.sh` - Test for the JavaScript program
   - `test_hello_fsharp.sh` - Test for the F# script
   - `test_hello_vbnet.sh` - Test for the VB.NET program
+  - `test_hello_assembly.sh` - Test for the ARM64 Assembly program
   - `run_all_tests.sh` - Master test runner
 
 ## Usage
@@ -280,6 +283,22 @@ To run the VB.NET program using the .NET runtime:
 dotnet run --project hello_vb.vbproj
 ```
 
+### ARM64 Assembly Program
+
+To run the ARM64 Assembly program on macOS (requires Xcode Command Line Tools):
+
+```bash
+# Assemble and link
+as hello.s -o hello.o
+clang hello.o -o hello_asm
+
+# Run the program
+./hello_asm
+
+# Clean up
+rm hello.o hello_asm
+```
+
 ## Requirements
 
 - **For bash script**: Bash shell (available on most Unix-like systems including Linux and macOS)
@@ -293,6 +312,7 @@ dotnet run --project hello_vb.vbproj
 - **For Java program**: Java Development Kit (JDK) with javac compiler and java runtime
 - **For F# script**: .NET SDK 9.0 or later (includes F# Interactive)
 - **For VB.NET program**: .NET SDK 9.0 or later
+- **For ARM64 Assembly program**: Xcode Command Line Tools (includes `as` assembler and `clang` for linking)
 
 ## Output
 
@@ -360,14 +380,18 @@ cd Tests
 # Test VB.NET program
 cd Tests
 ./test_hello_vbnet.sh
+
+# Test ARM64 Assembly program
+cd Tests
+./test_hello_assembly.sh
 ```
 
 The tests verify that each script/program produces the expected "hello world!" output.
 
 ## Project Statistics
 
-- **Languages Supported:** 11
-- **Test Coverage:** 100% (11/11 languages tested)
+- **Languages Supported:** 12
+- **Test Coverage:** 100% (12/12 languages tested)
 - **Total Files:** 25+ (source files, tests, documentation, build configs)
 - **Build Systems:** 4 (Make, .NET, Cargo, Go modules)
 - **Platforms Tested:** macOS (with cross-platform compatibility)
@@ -387,6 +411,7 @@ This project follows semantic versioning with each major language addition:
 - **v1.8** - Added JavaScript (Node.js) support
 - **v1.9** - Added F# support with .NET F# Interactive
 - **v2.0** - Added VB.NET support with .NET project system
+- **v2.1** - Added ARM64 Assembly support for macOS M1
 
 Each version is tagged in Git for easy checkout and reference.
 

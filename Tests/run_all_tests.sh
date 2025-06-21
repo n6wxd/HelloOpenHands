@@ -108,6 +108,15 @@ else
     ((TESTS_FAILED++))
 fi
 
+# Test ARM64 Assembly program
+echo
+bash test_hello_assembly.sh
+if [ $? -eq 0 ]; then
+    ((TESTS_PASSED++))
+else
+    ((TESTS_FAILED++))
+fi
+
 # Summary
 echo
 echo "======================================"

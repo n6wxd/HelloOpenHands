@@ -14,6 +14,7 @@ The project currently supports:
 - ✅ JavaScript program (`hello.js`) with Node.js runtime (tested on macOS)
 - ✅ F# script (`hello.fsx`) with .NET F# Interactive support (tested on macOS)
 - ✅ VB.NET program (`hello.vb`) with .NET project system (tested on macOS)
+- ✅ ARM64 Assembly program (`hello.s`) with macOS system calls (tested on macOS M1)
 - ✅ Comprehensive test suite for all implementations
 - ✅ Documentation and usage instructions
 
@@ -27,6 +28,7 @@ The project currently supports:
 - ✅ **JavaScript (Node.js)** - Add pure Node.js version (separate from TypeScript)
 - ✅ **F#** - Add `hello.fsx` with .NET F# Interactive support
 - ✅ **VB.NET** - Add `hello.vb` with .NET VB.NET support
+- ✅ **ARM64 Assembly** - Add `hello.s` with macOS system calls for M1
 
 ### Build & Testing Improvements
 
