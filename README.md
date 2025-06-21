@@ -4,15 +4,17 @@ A simple "Hello World" project demonstrating basic scripting in multiple languag
 
 ## Description
 
-This project contains simple "Hello World" scripts in both bash and Python that print "hello world!" to the console. It serves as a basic example of scripting in different languages and can be used as a starting point for learning programming.
+This project contains simple "Hello World" scripts in bash, Python, and TypeScript that print "hello world!" to the console. It serves as a basic example of scripting in different languages and can be used as a starting point for learning programming.
 
 ## Files
 
 - `hello.sh` - Bash script that outputs "hello world!"
 - `hello.py` - Python script that outputs "hello world!"
+- `hello.ts` - TypeScript script that outputs "hello world!"
 - `Tests/` - Directory containing test files
   - `test_hello_bash.sh` - Test for the bash script
   - `test_hello_python.py` - Test for the Python script
+  - `test_hello_typescript.js` - Test for the TypeScript script
   - `run_all_tests.sh` - Master test runner
 
 ## Usage
@@ -45,14 +47,29 @@ Or if it has execute permissions:
 ./hello.py
 ```
 
+### TypeScript Script
+
+To run the TypeScript script with Node.js (since it's also valid JavaScript):
+
+```bash
+node hello.ts
+```
+
+Or if you have TypeScript compiler installed, you can compile and run:
+
+```bash
+tsc hello.ts && node hello.js
+```
+
 ## Requirements
 
 - **For bash script**: Bash shell (available on most Unix-like systems including Linux and macOS)
 - **For Python script**: Python 3.x
+- **For TypeScript script**: Node.js (to run as JavaScript) or TypeScript compiler (optional)
 
 ## Output
 
-When executed, both scripts will output:
+When executed, all scripts will output:
 ```
 hello world!
 ```
@@ -80,6 +97,10 @@ cd Tests
 # Test Python script
 cd Tests
 python3 test_hello_python.py
+
+# Test TypeScript script
+cd Tests
+node test_hello_typescript.js
 ```
 
 The tests verify that each script produces the expected "hello world!" output.
