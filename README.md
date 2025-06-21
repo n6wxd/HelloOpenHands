@@ -4,7 +4,7 @@ A simple "Hello World" project demonstrating basic scripting in multiple languag
 
 ## Description
 
-This project contains simple "Hello World" scripts in bash, Python, TypeScript, C, C#, and Rust that print "hello world!" to the console. It serves as a basic example of programming in different languages and can be used as a starting point for learning programming.
+This project contains simple "Hello World" scripts in bash, Python, TypeScript, C, C#, Rust, and Go that print "hello world!" to the console. It serves as a basic example of programming in different languages and can be used as a starting point for learning programming.
 
 ## Files
 
@@ -14,6 +14,7 @@ This project contains simple "Hello World" scripts in bash, Python, TypeScript, 
 - `hello.c` - C program that outputs "hello world!"
 - `hello.cs` - C# program that outputs "hello world!"
 - `hello.rs` - Rust program that outputs "hello world!"
+- `hello.go` - Go program that outputs "hello world!"
 - `hello.csproj` - .NET project file for the C# program
 - `Cargo.toml` - Rust project configuration file
 - `Makefile` - Build configuration for the C program
@@ -24,6 +25,7 @@ This project contains simple "Hello World" scripts in bash, Python, TypeScript, 
   - `test_hello_c.sh` - Test for the C program
   - `test_hello_csharp.sh` - Test for the C# program
   - `test_hello_rust.sh` - Test for the Rust program
+  - `test_hello_go.sh` - Test for the Go program
   - `run_all_tests.sh` - Master test runner
 
 ## Usage
@@ -157,6 +159,34 @@ To clean build artifacts:
 cargo clean
 ```
 
+### Go Program
+
+To run the Go program directly:
+
+```bash
+go run hello.go
+```
+
+To build and run the Go program:
+
+```bash
+go build hello.go
+./hello
+```
+
+To build with a specific output name:
+
+```bash
+go build -o hello_go hello.go
+./hello_go
+```
+
+To clean build artifacts (remove compiled binary):
+
+```bash
+rm -f hello
+```
+
 ## Requirements
 
 - **For bash script**: Bash shell (available on most Unix-like systems including Linux and macOS)
@@ -165,6 +195,7 @@ cargo clean
 - **For C program**: GCC compiler and make utility
 - **For C# program**: .NET SDK 9.0 or later
 - **For Rust program**: Rust toolchain (rustc and cargo)
+- **For Go program**: Go compiler and runtime
 
 ## Output
 
@@ -212,6 +243,10 @@ cd Tests
 # Test Rust program
 cd Tests
 ./test_hello_rust.sh
+
+# Test Go program
+cd Tests
+./test_hello_go.sh
 ```
 
 The tests verify that each script/program produces the expected "hello world!" output.

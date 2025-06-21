@@ -1,6 +1,9 @@
 # Compiled C program
 hello
 
+# Go compiled binary (same name as C program)
+# Already covered by the 'hello' entry above
+
 # macOS system files
 .DS_Store
 
