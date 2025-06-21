@@ -54,7 +54,7 @@ The project currently supports:
 
 ## Contributing
 
-See `ISSUE_TEMPLATE_RUST.md` for an example of how to contribute a new language implementation. Each new language should follow the established patterns:
+Each new language implementation should follow the established patterns:
 
 1. Source file with consistent output format
 2. Build/execution instructions
