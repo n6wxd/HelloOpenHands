@@ -1,18 +1,25 @@
 # HelloOpenHands
 
-A simple "Hello World" project demonstrating basic shell scripting.
+A simple "Hello World" project demonstrating basic scripting in multiple languages.
 
 ## Description
 
-This project contains a simple bash script that prints "hello world!" to the console. It serves as a basic example of shell scripting and can be used as a starting point for learning bash programming.
+This project contains simple "Hello World" scripts in both bash and Python that print "hello world!" to the console. It serves as a basic example of scripting in different languages and can be used as a starting point for learning programming.
 
 ## Files
 
-- `hello.sh` - The main bash script that outputs "hello world!"
+- `hello.sh` - Bash script that outputs "hello world!"
+- `hello.py` - Python script that outputs "hello world!"
+- `Tests/` - Directory containing test files
+  - `test_hello_bash.sh` - Test for the bash script
+  - `test_hello_python.py` - Test for the Python script
+  - `run_all_tests.sh` - Master test runner
 
 ## Usage
 
-To run the script, make sure it has execute permissions and run it from the command line:
+### Bash Script
+
+To run the bash script, make sure it has execute permissions and run it from the command line:
 
 ```bash
 ./hello.sh
@@ -24,16 +31,58 @@ Or you can run it using bash directly:
 bash hello.sh
 ```
 
+### Python Script
+
+To run the Python script:
+
+```bash
+python3 hello.py
+```
+
+Or if it has execute permissions:
+
+```bash
+./hello.py
+```
+
 ## Requirements
 
-- Bash shell (available on most Unix-like systems including Linux and macOS)
+- **For bash script**: Bash shell (available on most Unix-like systems including Linux and macOS)
+- **For Python script**: Python 3.x
 
 ## Output
 
-When executed, the script will output:
+When executed, both scripts will output:
 ```
 hello world!
 ```
+
+## Testing
+
+This project includes automated tests to verify that both scripts work correctly.
+
+### Running Tests
+
+To run all tests:
+
+```bash
+cd Tests
+./run_all_tests.sh
+```
+
+To run individual tests:
+
+```bash
+# Test bash script
+cd Tests
+./test_hello_bash.sh
+
+# Test Python script
+cd Tests
+python3 test_hello_python.py
+```
+
+The tests verify that each script produces the expected "hello world!" output.
 
 ## Getting Started
 
