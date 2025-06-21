@@ -21,3 +21,6 @@ obj/
 # Rust build artifacts
 target/
 Cargo.lock
+
+# Java compiled class files
+*.class

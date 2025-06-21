@@ -72,6 +72,15 @@ else
     ((TESTS_FAILED++))
 fi
 
+# Test Java program
+echo
+bash test_hello_java.sh
+if [ $? -eq 0 ]; then
+    ((TESTS_PASSED++))
+else
+    ((TESTS_FAILED++))
+fi
+
 # Summary
 echo
 echo "======================================"
