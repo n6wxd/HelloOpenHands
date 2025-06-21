@@ -13,6 +13,7 @@ The project currently supports:
 - ✅ Java program (`Hello.java`) with javac/java compilation (tested on macOS)
 - ✅ JavaScript program (`hello.js`) with Node.js runtime (tested on macOS)
 - ✅ F# script (`hello.fsx`) with .NET F# Interactive support (tested on macOS)
+- ✅ VB.NET program (`hello.vb`) with .NET project system (tested on macOS)
 - ✅ Comprehensive test suite for all implementations
 - ✅ Documentation and usage instructions
 
@@ -25,7 +26,7 @@ The project currently supports:
 - ✅ **Java** - Add `Hello.java` with compilation instructions
 - ✅ **JavaScript (Node.js)** - Add pure Node.js version (separate from TypeScript)
 - ✅ **F#** - Add `hello.fsx` with .NET F# Interactive support
-- [ ] **VB.NET** - Add `hello.vb` with .NET VB.NET support
+- ✅ **VB.NET** - Add `hello.vb` with .NET VB.NET support
 
 ### Build & Testing Improvements
 
