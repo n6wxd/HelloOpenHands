@@ -4,7 +4,7 @@ A simple "Hello World" project demonstrating basic scripting in multiple languag
 
 ## Description
 
-This project contains simple "Hello World" scripts in bash, Python, TypeScript, and C that print "hello world!" to the console. It serves as a basic example of programming in different languages and can be used as a starting point for learning programming.
+This project contains simple "Hello World" scripts in bash, Python, TypeScript, C, and C# that print "hello world!" to the console. It serves as a basic example of programming in different languages and can be used as a starting point for learning programming.
 
 ## Files
 
@@ -12,12 +12,15 @@ This project contains simple "Hello World" scripts in bash, Python, TypeScript, 
 - `hello.py` - Python script that outputs "hello world!"
 - `hello.ts` - TypeScript script that outputs "hello world!"
 - `hello.c` - C program that outputs "hello world!"
+- `hello.cs` - C# program that outputs "hello world!"
+- `hello.csproj` - .NET project file for the C# program
 - `Makefile` - Build configuration for the C program
 - `Tests/` - Directory containing test files
   - `test_hello_bash.sh` - Test for the bash script
   - `test_hello_python.py` - Test for the Python script
   - `test_hello_typescript.js` - Test for the TypeScript script
   - `test_hello_c.sh` - Test for the C program
+  - `test_hello_csharp.sh` - Test for the C# program
   - `run_all_tests.sh` - Master test runner
 
 ## Usage
@@ -91,12 +94,39 @@ Available make targets:
 - `make test` - Compile and test the program
 - `make clean` - Remove compiled files
 
+### C# Program
+
+To run the C# program using the .NET CLI:
+
+```bash
+dotnet run --project hello.csproj
+```
+
+Or simply:
+
+```bash
+dotnet run
+```
+
+To build the C# program without running:
+
+```bash
+dotnet build
+```
+
+To clean build artifacts:
+
+```bash
+dotnet clean
+```
+
 ## Requirements
 
 - **For bash script**: Bash shell (available on most Unix-like systems including Linux and macOS)
 - **For Python script**: Python 3.x
 - **For TypeScript script**: Node.js (to run as JavaScript) or TypeScript compiler (optional)
 - **For C program**: GCC compiler and make utility
+- **For C# program**: .NET SDK 9.0 or later
 
 ## Output
 
@@ -136,6 +166,10 @@ node test_hello_typescript.js
 # Test C program
 cd Tests
 ./test_hello_c.sh
+
+# Test C# program
+cd Tests
+./test_hello_csharp.sh
 ```
 
 The tests verify that each script/program produces the expected "hello world!" output.

@@ -10,3 +10,7 @@ npm-debug.log
 # TypeScript compiled output (if using tsc)
 *.js
 !Tests/*.js
+
+# .NET build artifacts
+bin/
+obj/
