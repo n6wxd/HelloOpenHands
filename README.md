@@ -4,13 +4,14 @@ A simple "Hello World" project demonstrating basic scripting in multiple languag
 
 ## Description
 
-This project contains simple "Hello World" scripts in bash, Python, TypeScript, C, C#, Rust, Go, and Java that print "hello world!" to the console. It serves as a basic example of programming in different languages and can be used as a starting point for learning programming.
+This project contains simple "Hello World" scripts in bash, Python, TypeScript, JavaScript (Node.js), C, C#, Rust, Go, and Java that print "hello world!" to the console. It serves as a basic example of programming in different languages and can be used as a starting point for learning programming.
 
 ## Files
 
 - `hello.sh` - Bash script that outputs "hello world!"
 - `hello.py` - Python script that outputs "hello world!"
 - `hello.ts` - TypeScript script that outputs "hello world!"
+- `hello.js` - JavaScript (Node.js) script that outputs "hello world!"
 - `hello.c` - C program that outputs "hello world!"
 - `hello.cs` - C# program that outputs "hello world!"
 - `hello.rs` - Rust program that outputs "hello world!"
@@ -72,6 +73,14 @@ Or if you have TypeScript compiler installed, you can compile and run:
 
 ```bash
 tsc hello.ts && node hello.js
+```
+
+### JavaScript Script
+
+To run the JavaScript script with Node.js:
+
+```bash
+node hello.js
 ```
 
 ### C Program
@@ -215,6 +224,7 @@ rm -f Hello.class
 - **For bash script**: Bash shell (available on most Unix-like systems including Linux and macOS)
 - **For Python script**: Python 3.x
 - **For TypeScript script**: Node.js (to run as JavaScript) or TypeScript compiler (optional)
+- **For JavaScript script**: Node.js runtime
 - **For C program**: GCC compiler and make utility
 - **For C# program**: .NET SDK 9.0 or later
 - **For Rust program**: Rust toolchain (rustc and cargo)
@@ -275,6 +285,10 @@ cd Tests
 # Test Java program
 cd Tests
 ./test_hello_java.sh
+
+# Test JavaScript program
+cd Tests
+./test_hello_javascript.sh
 ```
 
 The tests verify that each script/program produces the expected "hello world!" output.

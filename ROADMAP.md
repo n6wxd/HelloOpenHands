@@ -11,6 +11,7 @@ The project currently supports:
 - ✅ Rust program (`hello.rs`) with Cargo build system (tested on macOS)
 - ✅ Go program (`hello.go`) with go build/run support (tested on macOS)
 - ✅ Java program (`Hello.java`) with javac/java compilation (tested on macOS)
+- ✅ JavaScript program (`hello.js`) with Node.js runtime (tested on macOS)
 - ✅ Comprehensive test suite for all implementations
 - ✅ Documentation and usage instructions
 
@@ -21,7 +22,7 @@ The project currently supports:
 - ✅ **Rust** - Add `hello.rs` with Cargo build system
 - ✅ **Go** - Add `hello.go` with go build/run support
 - ✅ **Java** - Add `Hello.java` with compilation instructions
-- [ ] **JavaScript (Node.js)** - Add pure Node.js version (separate from TypeScript)
+- ✅ **JavaScript (Node.js)** - Add pure Node.js version (separate from TypeScript)
 - [ ] **F#** - Add `hello.fs` with .NET F# support
 - [ ] **VB.NET** - Add `hello.vb` with .NET VB.NET support
 
@@ -72,4 +73,5 @@ Each new language implementation should follow the established patterns:
 - **v1.5** - Added Rust support with Cargo build system
 - **v1.6** - Added Go support with go build/run
 - **v1.7** - Added Java support with javac/java compilation
-- **v2.0** - (Planned) JavaScript (Node.js) support and CI/CD pipeline
+- **v1.8** - Added JavaScript (Node.js) support
+- **v2.0** - (Planned) CI/CD pipeline and additional language support

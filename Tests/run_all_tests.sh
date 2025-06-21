@@ -81,6 +81,15 @@ else
     ((TESTS_FAILED++))
 fi
 
+# Test JavaScript program
+echo
+bash test_hello_javascript.sh
+if [ $? -eq 0 ]; then
+    ((TESTS_PASSED++))
+else
+    ((TESTS_FAILED++))
+fi
+
 # Summary
 echo
 echo "======================================"
