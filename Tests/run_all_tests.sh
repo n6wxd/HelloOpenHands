@@ -144,6 +144,15 @@ else
     ((TESTS_FAILED++))
 fi
 
+# Test Haskell program
+echo
+bash test_hello_haskell.sh
+if [ $? -eq 0 ]; then
+    ((TESTS_PASSED++))
+else
+    ((TESTS_FAILED++))
+fi
+
 # Test ARM64 Assembly program
 echo
 bash test_hello_assembly.sh

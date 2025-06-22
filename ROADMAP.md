@@ -19,6 +19,7 @@ The project currently supports:
 - ✅ Perl script (`hello.pl`) with Perl interpreter support (tested on macOS)
 - ✅ Lua script (`hello.lua`) with Lua interpreter support (tested on macOS)
 - ✅ Clojure script (`hello.clj`) with Clojure CLI support (tested on macOS)
+- ✅ Haskell program (`hello.hs`) with GHC and runhaskell support (tested on macOS)
 - ✅ Comprehensive test suite for all implementations
 - ✅ Documentation and usage instructions
 
@@ -37,6 +38,7 @@ The project currently supports:
 - ✅ **Perl** - Add `hello.pl` with Perl interpreter support
 - ✅ **Lua** - Add `hello.lua` with Lua interpreter support
 - ✅ **Clojure** - Add `hello.clj` with Clojure CLI support
+- ✅ **Haskell** - Add `hello.hs` with GHC and runhaskell support
 
 ### Build & Testing Improvements
 
@@ -62,8 +64,8 @@ The project currently supports:
 
 - **WebAssembly** - Compile C/Rust to WASM for browser execution
 - **Mobile Platforms** - Swift (iOS) and Kotlin (Android) implementations
-- **Functional Languages** - Haskell implementations
-- **Assembly Language** - Low-level implementation for educational purposes
+- **Additional Functional Languages** - Erlang, Elixir, or OCaml implementations
+- **Scripting Languages** - PowerShell or Bash alternatives
 
 ## Contributing
 
@@ -93,3 +95,4 @@ Each new language implementation should follow the established patterns:
 - **v2.3** - Added Perl support with Perl interpreter
 - **v2.4** - Added Lua support with Lua interpreter
 - **v2.5** - Added Clojure support with Clojure CLI
+- **v2.6** - Added Haskell support with GHC and runhaskell
