@@ -1,14 +1,14 @@
 # HelloOpenHands
 
-A comprehensive "Hello World" project demonstrating basic programming across 10 different languages.
+A comprehensive "Hello World" project demonstrating basic programming across 16 different languages.
 
-[![Languages](https://img.shields.io/badge/languages-10-blue.svg)](#supported-languages)
+[![Languages](https://img.shields.io/badge/languages-16-blue.svg)](#supported-languages)
 [![Tests](https://img.shields.io/badge/tests-passing-green.svg)](#testing)
-[![Version](https://img.shields.io/badge/version-v1.9-orange.svg)](#version-history)
+[![Version](https://img.shields.io/badge/version-v2.5-orange.svg)](#version-history)
 
 ## Description
 
-This project contains simple "Hello World" scripts in bash, Python, TypeScript, JavaScript (Node.js), C, C#, Rust, Go, Java, F#, VB.NET, and ARM64 Assembly that print "hello world!" to the console. It serves as a basic example of programming in different languages and can be used as a starting point for learning programming.
+This project contains simple "Hello World" scripts in bash, Python, TypeScript, JavaScript (Node.js), C, C#, Rust, Go, Java, F#, VB.NET, Ruby, Perl, Lua, Clojure, and ARM64 Assembly that print "hello world!" to the console. It serves as a basic example of programming in different languages and can be used as a starting point for learning programming.
 
 ## Supported Languages
 
@@ -25,6 +25,10 @@ This project contains simple "Hello World" scripts in bash, Python, TypeScript, 
 | Java | `Hello.java` | JDK | `javac Hello.java && java Hello` |
 | F# | `hello.fsx` | .NET SDK | `dotnet fsi hello.fsx` |
 | VB.NET | `hello.vb` | .NET SDK | `dotnet run --project hello_vb.vbproj` |
+| Ruby | `hello.rb` | Ruby interpreter | `ruby hello.rb` |
+| Perl | `hello.pl` | Perl interpreter | `perl hello.pl` |
+| Lua | `hello.lua` | Lua interpreter | `lua hello.lua` |
+| Clojure | `hello.clj` | Clojure CLI | `clojure -M hello.clj` |
 | ARM64 Assembly | `hello.s` | Xcode CLI Tools | `as hello.s -o hello.o && clang hello.o -o hello_asm && ./hello_asm` |
 
 ## Quick Start
@@ -59,6 +63,7 @@ This project contains simple "Hello World" scripts in bash, Python, TypeScript, 
 - `Hello.java` - Java program that outputs "hello world!"
 - `hello.fsx` - F# script that outputs "hello world!"
 - `hello.vb` - VB.NET program that outputs "hello world!"
+- `hello.rb` - Ruby script that outputs "hello world!"
 - `hello.s` - ARM64 Assembly program that outputs "hello world!"
 - `hello.csproj` - .NET project file for the C# program
 - `hello_vb.vbproj` - .NET project file for the VB.NET program
@@ -76,6 +81,7 @@ This project contains simple "Hello World" scripts in bash, Python, TypeScript, 
   - `test_hello_javascript.sh` - Test for the JavaScript program
   - `test_hello_fsharp.sh` - Test for the F# script
   - `test_hello_vbnet.sh` - Test for the VB.NET program
+  - `test_hello_ruby.sh` - Test for the Ruby script
   - `test_hello_assembly.sh` - Test for the ARM64 Assembly program
   - `run_all_tests.sh` - Master test runner
 
@@ -283,6 +289,62 @@ To run the VB.NET program using the .NET runtime:
 dotnet run --project hello_vb.vbproj
 ```
 
+### Ruby Script
+
+To run the Ruby script:
+
+```bash
+ruby hello.rb
+```
+
+Or if it has execute permissions:
+
+```bash
+./hello.rb
+```
+
+### Perl Script
+
+To run the Perl script:
+
+```bash
+perl hello.pl
+```
+
+Or if it has execute permissions:
+
+```bash
+./hello.pl
+```
+
+### Lua Script
+
+To run the Lua script:
+
+```bash
+lua hello.lua
+```
+
+Or if it has execute permissions:
+
+```bash
+./hello.lua
+```
+
+### Clojure Script
+
+To run the Clojure script:
+
+```bash
+clojure -M hello.clj
+```
+
+Or if it has execute permissions:
+
+```bash
+./hello.clj
+```
+
 ### ARM64 Assembly Program
 
 To run the ARM64 Assembly program on macOS (requires Xcode Command Line Tools):
@@ -312,6 +374,10 @@ rm hello.o hello_asm
 - **For Java program**: Java Development Kit (JDK) with javac compiler and java runtime
 - **For F# script**: .NET SDK 9.0 or later (includes F# Interactive)
 - **For VB.NET program**: .NET SDK 9.0 or later
+- **For Ruby script**: Ruby interpreter (usually pre-installed on macOS and Linux)
+- **For Perl script**: Perl interpreter (usually pre-installed on macOS and Linux)
+- **For Lua script**: Lua interpreter (install with `brew install lua` on macOS or package manager on Linux)
+- **For Clojure script**: Clojure CLI tools (install with `brew install clojure/tools/clojure` on macOS)
 - **For ARM64 Assembly program**: Xcode Command Line Tools (includes `as` assembler and `clang` for linking)
 
 ## Output
@@ -381,6 +447,22 @@ cd Tests
 cd Tests
 ./test_hello_vbnet.sh
 
+# Test Ruby script
+cd Tests
+./test_hello_ruby.sh
+
+# Test Perl script
+cd Tests
+./test_hello_perl.sh
+
+# Test Lua script
+cd Tests
+./test_hello_lua.sh
+
+# Test Clojure script
+cd Tests
+./test_hello_clojure.sh
+
 # Test ARM64 Assembly program
 cd Tests
 ./test_hello_assembly.sh
@@ -390,9 +472,9 @@ The tests verify that each script/program produces the expected "hello world!" o
 
 ## Project Statistics
 
-- **Languages Supported:** 12
-- **Test Coverage:** 100% (12/12 languages tested)
-- **Total Files:** 25+ (source files, tests, documentation, build configs)
+- **Languages Supported:** 16
+- **Test Coverage:** 100% (16/16 languages tested)
+- **Total Files:** 33+ (source files, tests, documentation, build configs)
 - **Build Systems:** 4 (Make, .NET, Cargo, Go modules)
 - **Platforms Tested:** macOS (with cross-platform compatibility)
 
@@ -412,6 +494,10 @@ This project follows semantic versioning with each major language addition:
 - **v1.9** - Added F# support with .NET F# Interactive
 - **v2.0** - Added VB.NET support with .NET project system
 - **v2.1** - Added ARM64 Assembly support for macOS M1
+- **v2.2** - Added Ruby support with Ruby interpreter
+- **v2.3** - Added Perl support with Perl interpreter
+- **v2.4** - Added Lua support with Lua interpreter
+- **v2.5** - Added Clojure support with Clojure CLI
 
 Each version is tagged in Git for easy checkout and reference.
 

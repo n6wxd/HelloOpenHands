@@ -15,6 +15,10 @@ The project currently supports:
 - ✅ F# script (`hello.fsx`) with .NET F# Interactive support (tested on macOS)
 - ✅ VB.NET program (`hello.vb`) with .NET project system (tested on macOS)
 - ✅ ARM64 Assembly program (`hello.s`) with macOS system calls (tested on macOS M1)
+- ✅ Ruby script (`hello.rb`) with Ruby interpreter support (tested on macOS)
+- ✅ Perl script (`hello.pl`) with Perl interpreter support (tested on macOS)
+- ✅ Lua script (`hello.lua`) with Lua interpreter support (tested on macOS)
+- ✅ Clojure script (`hello.clj`) with Clojure CLI support (tested on macOS)
 - ✅ Comprehensive test suite for all implementations
 - ✅ Documentation and usage instructions
 
@@ -29,6 +33,10 @@ The project currently supports:
 - ✅ **F#** - Add `hello.fsx` with .NET F# Interactive support
 - ✅ **VB.NET** - Add `hello.vb` with .NET VB.NET support
 - ✅ **ARM64 Assembly** - Add `hello.s` with macOS system calls for M1
+- ✅ **Ruby** - Add `hello.rb` with Ruby interpreter support
+- ✅ **Perl** - Add `hello.pl` with Perl interpreter support
+- ✅ **Lua** - Add `hello.lua` with Lua interpreter support
+- ✅ **Clojure** - Add `hello.clj` with Clojure CLI support
 
 ### Build & Testing Improvements
 
@@ -54,7 +62,7 @@ The project currently supports:
 
 - **WebAssembly** - Compile C/Rust to WASM for browser execution
 - **Mobile Platforms** - Swift (iOS) and Kotlin (Android) implementations
-- **Functional Languages** - Haskell, Clojure implementations
+- **Functional Languages** - Haskell implementations
 - **Assembly Language** - Low-level implementation for educational purposes
 
 ## Contributing
@@ -80,3 +88,8 @@ Each new language implementation should follow the established patterns:
 - **v1.8** - Added JavaScript (Node.js) support
 - **v1.9** - Added F# support with .NET F# Interactive
 - **v2.0** - Added VB.NET support with .NET project system
+- **v2.1** - Added ARM64 Assembly support with macOS system calls
+- **v2.2** - Added Ruby support with Ruby interpreter
+- **v2.3** - Added Perl support with Perl interpreter
+- **v2.4** - Added Lua support with Lua interpreter
+- **v2.5** - Added Clojure support with Clojure CLI

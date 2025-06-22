@@ -108,6 +108,42 @@ else
     ((TESTS_FAILED++))
 fi
 
+# Test Ruby program
+echo
+bash test_hello_ruby.sh
+if [ $? -eq 0 ]; then
+    ((TESTS_PASSED++))
+else
+    ((TESTS_FAILED++))
+fi
+
+# Test Perl program
+echo
+bash test_hello_perl.sh
+if [ $? -eq 0 ]; then
+    ((TESTS_PASSED++))
+else
+    ((TESTS_FAILED++))
+fi
+
+# Test Lua program
+echo
+bash test_hello_lua.sh
+if [ $? -eq 0 ]; then
+    ((TESTS_PASSED++))
+else
+    ((TESTS_FAILED++))
+fi
+
+# Test Clojure program
+echo
+bash test_hello_clojure.sh
+if [ $? -eq 0 ]; then
+    ((TESTS_PASSED++))
+else
+    ((TESTS_FAILED++))
+fi
+
 # Test ARM64 Assembly program
 echo
 bash test_hello_assembly.sh
